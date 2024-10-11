@@ -79,20 +79,7 @@ BLOCK DIAGRAM:
 
 
 
-
-
-
-
-
-
-
-
-
 RECEIVER SIDE:
-
-
-
-
 
 
 
