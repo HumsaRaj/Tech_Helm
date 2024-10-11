@@ -1,0 +1,625 @@
+Tech_Helm
+
+
+ABSTRACT
+The increasing number of road accidents involving motorcyclists has highlighted the need for enhanced safety measures. This project presents the design and implementation of a Smart Helmet integrated with an Advanced Driver Assistance System (ADAS) to ensure rider safety through real-time monitoring and preventive actions. The system employs various sensors and modules including an IR sensor for helmet detection, an eye blink sensor for drowsiness detection, an alcohol sensor to prevent drunk driving, a MEMS sensor for accident detection, and GPS and GSM modules for real-time location tracking and emergency communication. The helmet is designed to prevent the vehicle from starting unless it is securely worn. It also monitors the rider's physiological state, detecting signs of drowsiness or alcohol consumption. In the event of an accident, the system automatically sends an SOS message with the rider's GPS location to emergency contacts. Additionally, an emergency button allows the rider to manually trigger an alert if needed. This system leverages IoT technology to enable remote monitoring and data logging, offering a comprehensive solution that enhances the safety and security of motorcyclists. The Smart Helmet's ability to proactively address potential risks before they result in accidents, coupled with its real-time emergency response features, positions it as a critical tool in reducing fatalities and injuries on the road..
+
+
+
+EXISTING SYSTEM
+The existing systems designed for motorcyclist safety typically focus on either passive safety features or basic monitoring without significant automation or advanced response mechanisms. Some of the common technologies and limitations in current use include:
+1.	Standard Helmets:
+o	Traditional helmets primarily provide passive protection by reducing the risk of head injury in case of an accident. While they are essential for rider safety, they lack any built-in electronic or communication features to prevent accidents or alert authorities in emergencies.
+2.	Basic Alcohol Detection Systems:
+o	Some motorcycles are equipped with basic breathalyzers that prevent the vehicle from starting if alcohol is detected. However, these systems are often standalone and lack integration with other safety features, such as emergency communication or location tracking.
+3.	Vehicle Immobilizers:
+o	Immobilizer systems are used to prevent theft or unauthorized use of motorcycles. These systems may also be integrated with helmet detection sensors, where the bike will not start unless the rider is wearing a helmet. However, these systems generally do not monitor the rider’s condition or provide any post-accident response.
+4.	Manual Emergency Systems:
+o	Some advanced helmets or bike accessories may include an emergency button that the rider can press to send a distress signal in case of an accident. These systems typically require manual activation, which may not be possible if the rider is unconscious or incapacitated.
+5.	Bluetooth-Enabled Helmets:
+o	Helmets equipped with Bluetooth technology allow riders to connect to their smartphones for hands-free communication and navigation. While this adds convenience, it does not significantly contribute to rider safety in terms of accident prevention or automated emergency response.
+6.	Telematics and GPS Tracking:
+o	GPS tracking devices are available for motorcycles, primarily for theft prevention and recovery. These devices can track the location of the vehicle but do not typically monitor the rider's condition or provide emergency alerts unless manually activated.
+Limitations of Existing Systems
+•	Lack of Integration: Most existing systems are standalone and do not provide a comprehensive solution that integrates multiple safety features like accident detection, alcohol monitoring, and real-time communication.
+•	Reactive Rather Than Proactive: Current technologies focus more on post-accident responses rather than preventing accidents from occurring in the first place.
+•	Manual Operation: Many existing emergency systems require manual activation, which may not be feasible in critical situations where the rider is incapacitated.
+•	Limited Monitoring: Systems that monitor the rider’s condition, such as alcohol detection, often lack real-time data transmission and automated alerts, limiting their effectiveness in preventing accidents or ensuring a quick response.
+
+
+EXISTING SYSTEM DISADVANTAGES
+•	Lack of real-time hazard detection: Existing helmets typically do not incorporate sensors like ultrasonic sensors, eye blinking sensors, and color sensors, limiting their ability to detect and respond to immediate hazards on the road.
+•	 Limited driver condition monitoring: Traditional helmets do not monitor the wearer's fatigue level or intoxication, increasing the risk of accidents due to impaired driving.
+•	 Absence of navigation assistance: Standard helmets lack GPS functionality, making it challenging for users to navigate unfamiliar routes or receive real-time directions.
+•	 Inability to provide remote monitoring: Without IoT connectivity, existing helmets cannot transmit vital data or emergency alerts to a centralized system, reducing their effectiveness in critical situations.
+•	 Minimal integration of advanced technologies: Current helmet designs often overlook the potential benefits of integrating advanced technologies, such as automated hazard detection and adaptive lighting, which are crucial for modern road safety standards.
+
+PROPOSED SYSTEM
+The proposed system aims to enhance motorcyclist safety by integrating multiple advanced technologies into a single smart helmet, providing both proactive and reactive safety measures. This system not only prevents accidents but also ensures immediate response in case of emergencies, thereby addressing the limitations of existing solutions.
+Key Features of the Proposed System:
+1.	Helmet Detection with IR Sensor:
+o	The system incorporates an IR sensor to detect whether the helmet is worn by the rider. The motorcycle will not start unless the helmet is properly in place, ensuring that the rider always wears the helmet before operating the vehicle.
+2.	Drowsiness Detection with Eye Blink Sensor:
+o	The helmet is equipped with an eye blink sensor to monitor the rider’s eye movements. If the sensor detects patterns consistent with drowsiness, the system issues a warning to the rider and can automatically take corrective actions, such as slowing down the vehicle.
+3.	Alcohol Detection System:
+o	An alcohol sensor measures the rider's breath alcohol concentration. If the alcohol level exceeds a predefined threshold, the system disables the motorcycle's ignition, preventing the rider from operating the vehicle under the influence. Additionally, it sends an alert with the rider's GPS location to emergency contacts via the GSM module.
+4.	Accident Detection using MEMS Sensor:
+o	The system includes a MEMS sensor to detect sudden impacts or abnormal movements that may indicate an accident. Upon detecting a potential crash, the system automatically sends an SOS message, including the GPS coordinates, to emergency services or pre-set contacts, ensuring quick assistance.
+5.	Emergency Button:
+o	The helmet features an emergency button that the rider can press to manually send a distress signal. This feature allows the rider to alert others in case of any emergency, with the message containing real-time location data.
+6.	Real-Time Location Tracking with GPS and GSM Modules:
+o	The GPS module continuously tracks the rider’s location, and the GSM module allows for real-time communication. In the event of an accident or emergency, the system sends the location details to emergency contacts, enabling a swift response.
+7.	IoT Integration for Remote Monitoring:
+o	The smart helmet is connected to an IoT platform, allowing for real-time monitoring and data logging. This feature enables remote access to the helmet's status, including the rider’s condition and location. In case of any abnormalities, alerts are sent to a connected smartphone or monitoring system.
+8.	Relay-Controlled Ignition System:
+o	A relay is used to control the motorcycle's ignition based on the inputs from the helmet’s sensors. The relay ensures that the vehicle can only be operated when all safety conditions are met, such as helmet presence and alcohol-free breath.
+Advantages of the Proposed System:
+•	Comprehensive Safety: The integration of various sensors and modules provides a holistic approach to rider safety, addressing both accident prevention and emergency response.
+•	Automated Responses: The system is designed to take automatic actions, such as disabling the ignition or sending SOS alerts, without requiring manual intervention, ensuring effectiveness even if the rider is incapacitated.
+•	Proactive Monitoring: The use of eye blink sensors and alcohol detection provides proactive measures to prevent accidents caused by drowsiness or intoxication.
+•	Real-Time Connectivity: IoT integration and real-time communication ensure that the rider’s status and location are continuously monitored, allowing for immediate intervention in case of emergencies.
+•	User-Friendly Operation: The system’s automation reduces the need for user interaction, making it easy and intuitive for riders to use while providing maximum safety benefits.
+This proposed system represents a significant advancement in motorcyclist safety technology, offering a robust solution that not only protects riders but also ensures rapid assistance in critical situations.
+
+
+
+
+
+
+
+BLOCK DIAGRAM:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RECEIVER SIDE:
+
+
+
+
+
+
+
+SYSTEM SPECIFICATION
+HARDWARE CONFIGURATION:
+•	MICRO CONTROLLER
+•	MEMS SENSOR
+•	ALCOHOL SENSOR
+•	EYE BLINK  SENSOR
+•	IR SENSOR
+•	DC MOTOR
+•	WIFI
+•	GPS
+•	GSM
+•	SOS BUTTON
+•	POWER SUPPLY UNIT
+•	SOLDERING KIT	
+•	CONNECTING WIRES
+SOFTWARE CONFIGURATION:
+•	ARDUINO IDE
+•	EMBEDDED C
+•	PHP
+•	MYSQLI
+
+MODULES:
+o	SENSOR INTERFACING
+o	PREPARING POWER SUPPLY UNIT
+o	MICRO-CONTROLLER PROGRAMMING
+o	READING ANALOG DATA
+o	TEST AND DEBUG
+o	SUBMISSION 
+
+
+MODULE DESCRIPTION:
+
+SENSOR INTERFACING
+•	Sensor interfacing is a mix of amplification, filtering, and other signal conditioning as well as analog-to-digital conversion. The analog-to-digital converter (ADC) may be in your microcontroller, but you will still need to make the sensor compatible with the ADC input.
+PREPARING POWER SUPPLY UNIT
+•	A power supply unit (or PSU) converts mains AC to low-voltage regulated DC power for the internal components of a controller.  A power supply is used to reduce the mains electricity at 240 volts AC down to something more useable, say 12 volts DC. There are two types of power supply, linear and switch mode. A linear power supply uses a transformer to reduce the voltage. The AC signal is rectified and regulated to produce a high DC voltage.
+•	An AC adapter, AC/DC adapter, or AC/DC converteris a type of external power supply, often enclosed in a case similar to an AC plug. Adapters for battery-powered equipment may be described as chargers or rechargers (see also battery charger). AC adapters are used with electrical devices that require power but do not contain internal components to derive the required voltage and power from main power. The internal circuitry of an external power supply is very similar to the design that would be used for a built-in or internal supply.
+
+MICRO-CONTROLLER PROGRAMMING
+•	A microcontroller is a programmable IC, capable of multiple functions depending on how it’s programed. Many different kinds of microcontrollers exist that offer a wide range of functionality. The versatility of the microcontroller is what makes it one of the most powerful tools in modern design. This guide will explain the basics of microcontrollers and how they are programmed.
+READING ANALOG DATA
+•	The microcontroller of the board has a circuit inside called an analog-to-digital converter or ADC that reads this changing voltage and converts it to a number between 0 and 1023. When the shaft is turned all the way in one direction, there are 0 volts going to the pin, and the input value is 0. When the shaft is turned all the way in the opposite direction, there are 5 volts going to the pin and the input value is 1023. In between, analog Read() returns a number between 0 and 1023 that is proportional to the amount of voltage being applied to the pin.
+TEST AND DEBUG
+•	Testing means verifying correct behavior. Testing can be done at all stages of module development: requirements analysis, interface design, algorithm design, implementation, and integration with other modules. In the following, attention will be directed at implementation testing. Implementation testing is not restricted to execution testing. An implementation can also be tested using correctness proofs, code tracing, and peer reviews, as described below. 
+•	Debugging is a cyclic activity involving execution testing and code correction. The testing that is done during debugging has a different aim than final module testing. Final module testing aims to demonstrate correctness, whereas testing during debugging is primarily aimed at locating errors. This difference has a significant effect on the choice of testing strategies.
+6.	SUBMISSION
+Submitting the prototype for the presentation to the faculty guide for review purpose
+
+
+LITERATURE SURVEY
+TITLE:Smart Helmet Using RF and WSN Technology for Underground Mines Safety
+AUTHOR:Shabina.S
+YEAR: 2014
+DESCRIPTION:
+The underground mines all over the world are adversely affected by various hazards including gaseous explosions, landslides, fire hazards, etc. This leads to the significance of safety for the mine workers. A better communication technology has to be employed for an intelligent sensing and warning system. For this, RF technology is chosen for the communication inside the mines. The wireless sensor network is provided for the sensing of adverse working environment conditions. Combining both these technologies, a new smart helmet module is developed. The wireless sensor network consisting of various sensors senses mine environment parameters like temperature, pressure, humidity, gases like methane, carbon monoxide, etc. The measured parameters are processed and are used for an early intelligence warning system with the help of programmed alarm sounds, if there is any serious deviation from the normal parameter value range. The RF technology is also used as locating system, which helps in locating the mine-workers. This RF based wireless sensor network is reliable with easyinstallation and fast sensing and locating system. The design provides three modules, namely helmet module, localizer module, and control room module. The helmet module comprises of various sensors, microcontroller, antennas, encoders, decoders, etc. The helmet module acts as an intelligent, low power node in the wireless sensor network. The control room module contains antennas, PC, decoder, etc. The sensors are used to measure the variations in the temperature, humidity, pressure, fire and take decisions for required actions based on the measured data to ensure the safety of the underground mine workers. The RF technology also ensures the localization of the mine workers for their safety in a dangerous working platform. Thus the proposed system ensures safety and a reliable wireless communication inside the underground mines.
+
+TITLE:Implementation of Smart Safety Helmet for Coal Mine Workers
+AUTHOR:PranjalHazarika
+YEAR: 2017
+DESCRIPTION:
+This paper presents implementation of safety helmet for coal mine workers. This helmet is equipped with methane and carbon monoxide gas sensor. This sensor sense the gas and the data is transmitted to the control room wirelessly, through a wireless module called X-Bee connected with the helmet. When the methane or carbon-monoxide gas concentration is beyond the critical level, controller in the control room triggers an alarm and keeps the plant and the workers safe by preventing an upcoming accident.
+TITLE:Smart Helmets for Safety in Mining Industry
+AUTHOR:RohithRevindran, HansiniVijayaraghavan, Mei-Yuan Huang
+YEAR :2011
+DESCRIPTION:
+The mining industry is pivotal to the world’s economy. However, it is not one of the safest industries to work in. The life of miners is always at stake. This project attempts to help the miners in distress so that they receive immediate help. The helmet used by the miner can be improved by adding a wireless sensor mote and necessary sensors, which will help in monitoring the health condition of the miner. In doing so, a network of wireless sensors can be formed. This wireless sensor network (WSN) can be used to monitor the well-being of all the miners who are at work. The routing protocol developed for this project is based on Distance vector routing (DVR) and finds the best path based on shortest hop. The protocol is also robust to deal with failures. It does not require synchronization of the nodes. The protocol is pro-active to minimize delays. Whenever the load felt on the force sensor on the helmet is more than a threshold value, the mote in the helmet attempts to send a distress message to its Room Manager through the saved route. When a miner sends a distress message via its Room Manager, officials from Center can send in a medical team. The miners in the neighboring rooms are also informed so that they can help voluntarily. At times, the mote may not have a route to its Room Manager. In such cases a failure recovery procedure is carried out. The functioning of the project was successfully tested.
+TITLE:An Occupational Health and Safety Monitoring System
+AUTHOR:S.A. Ngubo, C.P. Kruger, G.P. Hancke and B.J. Silva
+YEAR: 2016
+DESCRIPTION:
+Hazardous environments at the workplace are a significant contributor to injuries due to accidents as well as chronic diseases. There are many occupational health and safety (OHS) systems, but they are costly or not flexible. This paper presents a low-cost OHS. It consists of various sensors that can be used to monitor whether a safety helmet is being worn, the worker is mobile and safety boots are being worn. The system interfaces with a wireless sensor network and is suitable for operation in environments such as underground mines and sawmills.
+
+
+
+TITLE:Experimental Design of Gas Monitoring System in Mine Safety helmet Based on Wireless Sensors Networks
+AUTHOR:Chunlong Ma ˈJinmingHuo ,Xiaohui Yang
+YEAR: 2022
+DESCRIPTION:
+In order to solve such problems of the mine cable gas monitoring system as high costs, inconvenient maintenance, hindering wiring and unmovable monitoring information points, a mine safety helmet is designed, based on wireless sensors networks, which studies the hardware design, gas concentration calculations and its dynamic compensation algorithm, as well as the experimental design of gas monitoring system in mine safety helmet so as to ensure the correct calculation of the gas concentration. The innovative point of this essay is the combination of the ordinary LED cap lamp and the wireless sensors networks, which ensures a real-time, dynamic collection ofthe information of the gas concentration around the workers.
+HARDWARE DESCRIPTION
+IR SENSOR
+	DESCRIPTION
+An infrared sensor is an electronic device, that emits in order to sense some aspects of the surroundings. An IR sensor can measure the heat of an object as well as detects the motion. These types of sensors measures only infrared radiation, rather than emitting it that is called as a passive IR sensor.
+
+                
+
+	IR SENSOR
+
+An infrared sensor is an electronic device, that emits in order to sense some aspects of the surroundings. An IR sensor can measure the heat of an object as well as detects the motion. These types of sensors measures only infrared radiation, rather than emitting it that is called as a passive IR sensor. Usually in the infrared spectrum, all the objects radiate some form of thermal radiations. These types of radiations are  invisible to our eyes, that can be detected by an infrared sensor.The emitter is simply an IR LED (Light Emitting Diode) and the detector is simply an IR photodiode which is sensitive to IR light of the same wavelength as that emitted by the IR LED. When IR light falls on the photodiode, The resistances and these output voltages, change in proportion to the magnitude of the IR light received.
+	 
+	CIRCUIT DIAGRAM
+
+
+
+
+FEATURES 
+•	Input voltage : 3.3v
+•	Output : analog
+
+
+
+APPLICATION
+•	Radiation Thermometers
+•	Flame Monitor
+•	Moisture Analyzers
+•	Gas Analyzers
+MEMS SENSOR
+
+DESCRIPTION
+Microelectromechanical system (MEMS, also written a micro-electro-mechanical, MicroElectroMechanical  or microelctronic and microelectromechanical systems and the related micromechatronics) is the technology of microscopic devices, particularly those with moving parts.
+The accelerometer is a low power, low profile capacitive micro machined Accelerometer featuring signal conditioning, a 1-pole low pass filter, temperature Compensation, self test, 0g-Detect which detects linear freefall, and g-Select which Allows for the selection between 2 sensitivities Zero-g offset and sensitivity is Factory set and requires no external devices. This includes a Sleep Mode that makes it ideal for handheld battery powered elect                   	 
+.	TILT SENSOR	  
+
+
+You can use an accelerometer's ability to sense acceleration to measure a variety of things that are very useful to electronic and robotic projects and designs: 
+•	Acceleration
+•	Tilt and tilt angle
+•	Incline
+•	Rotation
+•	Vibration
+•	Collision
+•	Gravity
+	
+                                                         
+SENSOR INTERFACE WITH CONTROLLER
+
+Acceleration is a measure of how quickly speed changes. Just as a speedometer is a meter that measures speed, an accelerometer is a meter that measures acceleration. Accelerometers are useful for sensing vibrations in systems or for orientation applications. Accelerometers can measure acceleration on one, two, or three axis. 3-axis units are becoming more common as the cost of development for them decreases. You can use an accelerometer's ability to sense acceleration to measure a variety of things that are very useful to electronic and robotic projects.
+
+FEATURES 
+•	Low Current Consumption: 400 Μa
+•	Sleep Mode: 3μA
+•	Low Voltage Operation: 2.2 V – 3.6 V
+•	High Sensitivity (800 mV/g @ 1.5g)
+•	Selectable Sensitivity (±1.5g, ±6g)
+•	Fast Turn on Time (0.5 ms Enable Response Time)
+•	Self Test for Freefall Detect Diagnosis
+
+APPLICATIONS:  
+•	Self balancing robots
+•	Tilt-mode game controllers
+•	Model airplane auto pilot
+•	Car alarm systems
+•	Crash detection/airbag deployment
+DC MOTOR
+
+DESCRIPTION
+
+ 	A DC motor is any of a class of rotary electrical machines that converts direct current electrical energy into mechanical energy. The most common types rely on the forces produced by magnetic fields. Nearly all types of DC motors have some internal mechanism, either electromechanical or electronic, to periodically change the direction of current flow in part of the motor.
+DC motors were the first type widely used, since they could be powered from existing direct-current lighting power distribution systems. A DC motor's speed can be controlled over a wide range, using either a variable supply voltage or by changing the strength of current in its field windings. Small DC motors are used in tools, toys, and appliances. The universal motor can operate on direct current but is a lightweight motor used for portable power tools and appliances. Larger DC motors are used in propulsion of electric vehicles, elevator and hoists, or in drives for steel rolling mills. The advent of power electronics has made replacement of DC motors with AC motors possible in many applications.
+The relationship between torque vs speed and current is linear as shown left; as the load on a motor increases, Speed will decrease. The graph pictured here represents the characteristics of a typical motor. As long as the motor is used in the area of high efficiency (as represented by the shaded area) long life and good performance can be expected.
+ 
+
+
+DC MOTOR (5000RPM 6V)
+
+	If voltage in continuous applied to a motor in a locked rotor condition, the motor will heat up and fail in a relatively short time. Therefore it is important that there is some form of protection against high temperature rises. A motor's basic rating point is slightly lower than its maximum efficiency point.
+
+A DC motor converts direct current electrical power into mechanical power. DC or direct current motor works on the principal, when a current carrying conductor is placed in a magnetic field, it experiences a torque and has a tendency to move. This is known as motoring action.
+	 
+
+DC MOTOR INTERFACE WITH CONTROLLER
+
+	When magnetic field and electric field interact they produce a mechanical force. Thus, a DC motor can be used at a voltage lower than the rated voltage. But, below 1000 rpm, the speed becomes unstable, and the motor will not run smoothly. However, using the motor outside this range will result in high temperature rises and deterioration of motor parts.
+
+
+
+FEATURES  
+•	Supply voltage: 5VDC
+•	Very reliable and low cost
+•	Speed: 1000rpm
+•	The field can be permanent magnet
+
+APPLICATIONS  
+•	Electric traction.
+•	Vacuum cleaner.
+•	Small DC motors are used in tools, toys, and appliances.
+•	The universal motor can operate on direct current but is a lightweight motor
+•	used for portable power tools and appliances
+GPS MODULE
+
+DESCRIPTION
+
+	The Global Positioning System (GPS), originally Navstar GPS, is a space-based radio navigation system owned by the United States government and operated by the United States Air Force. It is a global navigation satellite system that provides geo location and time information to a GPS receiver anywhere on or near the Earth where there is an unobstructed line of sight to four or more GPS satellites. 
+The GPS system does not require the user to transmit any data, and it operates independently of any telephonic or internet reception, though these technologies can enhance the usefulness of the GPS positioning information. The GPS system provides critical positioning capabilities to military, civil, and commercial users around the world. The United States government created the system, maintains it, and makes it freely accessible to anyone with a GPS receiver.
+ 
+GPS MODULE
+The Global Positioning System (GPS) is a global navigation satellite system that provides location and time information in all weather conditions. The GPS operates independently of any telephonic or internet reception, though these technologies can enhance the usefulness of the GPS positioning information. GPS satellites transmit signal information to earth. This signal information is received by the GPS receiver in order to measure the user’s correct position.
+	 
+GPS MODULE INTERFACE WITH ARDUINO
+
+             The GPS concept is based on time and the known position of specialized satellites. GPS satellites continuously transmit their current time and position. A GPS receiver monitors multiple satellites and solves equations to determine the precise position of the receiver and its deviation from true time. At a minimum, four satellites must be in view of the receiver for it to compute four unknown quantities.
+            Each GPS satellite continually broadcasts a signal (carrier wave with modulation) that includes a pseudorandom code (sequence of ones and zeros) that is known to the receiver and a message that includes the time of transmission (TOT) of the code epoch and the satellite position at that time.
+
+FEATURES  
+•	Supply voltage: 12v DC
+•	Interface: UART RS232
+•	Optional T-TL uart also available
+•	Precision: 5 meters
+•	Automatic antenna switching function
+
+ APPLICATIONS  
+•	GPS trackers
+•	Automated vehicle
+•	Robotics
+•	Fleet tracking
+
+	GSM MODEM
+DESCRIPTION
+	
+              A GSM modem is a specialized type of modem which accepts a SIM card, and operates over a subscription to a mobile operator, just like a mobile phone. This tutorial will explain how to interface a GSM modem with Toradex modules.
+
+
+ 
+GSM MODEM
+
+                 SIMCom Wireless Solutions is a subsidiary of SIM Technology Group Ltd (stock code: 2000. H.K). It is a fast-growing wireless M2M company, designing and offering a variety of wireless modules based on GSM/GPRS/EDGE, WCDMA/HSDPA and TD-SCDMA technical platforms By partnering with third parties, SIMCom Wireless provides customized design solutions in M2M, WLL, Mobile Computing, GPS and other applications. SIMCom Wireless also provides ODM services for customers. According to ABI Insight report, SIMCom Cellular Module was number two provider of wireless modules worldwide in 2008 with 20% acquisition of global market share
+	 
+
+GSM MODEM INTERFACE WITH CONTROLLER
+
+This GSM Modem can accept any GSM network act as SIM card and just like a mobile phone with its own unique phone number. Advantage of using this modem will be that you can use its RS232 port to communicate and develop embedded applications. The SIM900A is a complete Dual-band GSM/GPRS solution in a SMT module featuring an industry-standard interface; the SIM800 delivers GSM/GPRS 900/1800MHz performance for voice, SMS, Data, and Fax in a small form factor and with low power consumption. With a tiny configuration of 24mm x 24mm x 3 mm, SIM800 can fit almost all the space requirements in your applications, especially for slim and compact demand of design.
+
+FEATURES  
+•	High Quality Product
+•	RS232 interface @ RMC Connector for direct communication with computer or MCU kit  
+•	Configurable baud rate
+•	SMA connector with GSM Antenna.
+•	SIM Card holder.
+•	Built in Network Status LED
+•	Inbuilt Powerful TCP/IP protocol stack for internet data transfer over GPRS.
+•	Audio interface Connector
+•	Normal operation temperature: -20 °C to +55 °C  
+•	Input Voltage: 4.5V-12V DC
+
+
+APPLICATIONS 
+•	Short Message Service(SMS)
+•	Internet
+•	Incoming /outgoing calls
+
+ESP8266
+
+ESP8266 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC ultra-low-power 40 nm technology. It is designed to achieve the best power and RF performance, showing robustness, versatility and reliability in a wide variety of applications and power scenarios. 
+The ESP8266 series of chips includes ESP8266-D0WD-V3, ESP8266-D0WDQ6-V3, ESP8266-D0WD, ESP8266-D0WDQ6, ESP8266-D2WD, ESP8266-S0WD, and ESP8266-U4WDH, among which, ESP8266-D0WD-V3, ESP8266-D0WDQ6-V3, and ESP8266-U4WDH are based on ECO V3 wafer.
+
+ 
+Featured Solutions:
+	Ultra­Low­Power Solution 
+ESP8266 is designed for mobile, wearable electronics, and Internet-of-Things (IoT) applications. It features all the state-of-the-art characteristics of low-power chips, including fine-grained clock gating, multiple power modes, and dynamic power scaling. For instance, in a low-power IoT sensor hub application scenario, ESP8266 is woken up periodically and only when a specified condition is detected. Low-duty cycle is used to minimize the amount of energy that the chip expends. The output of the power amplifier is also adjustable, thus contributing to an optimal trade-off between communication range, data rate and power consumption.
+	Complete Integration Solution 
+ESP8266 is a highly-integrated solution for Wi-Fi-and-Bluetooth IoT applications, with around 20 external components. ESP8266 integrates an antenna switch, RF balun, power amplifier, low-noise receive amplifier, filters, and power management modules. As such, the entire solution occupies minimal Printed Circuit Board (PCB) area. ESP8266 uses CMOS for single-chip fully-integrated radio and baseband, while also integrating advanced calibration circuitries that allow the solution to remove external circuit imperfections or adjust to changes in external conditions. As such, the mass production of ESP8266 solutions does not require expensive and specialized Wi-Fi testing equipment.
+Wi­Fi Key Features 
+	802.11 b/g/n 
+	802.11 n (2.4 GHz), up to 150 Mbps 
+	WMM 
+	TX/RX A-MPDU, RX A-MSDU 
+	Immediate Block ACK
+	Defragmentation 
+	Automatic Beacon monitoring (hardware TSF) 
+	4 × virtual Wi-Fi interfaces 
+	Simultaneous support for Infrastructure Station, SoftAP, and Promiscuous modes Note that when ESP8266 is in Station mode, performing a scan, the SoftAP channel will be changed. 
+	Antenna diversity
+
+BT Key Features
+• Compliant with Bluetooth v4.2 BR/EDR and BLE specifications 
+• Class-1, class-2 and class-3 transmitter without external power amplifier 
+• Enhanced Power Control 
+• +12 dBm transmitting power 
+• NZIF receiver with –94 dBm BLE sensitivity 
+• Adaptive Frequency Hopping (AFH) 
+• Standard HCI based on SDIO/SPI/UART 
+• High-speed UART HCI, up to 4 Mbps 
+• Bluetooth 4.2 BR/EDR BLE dual mode controller 
+• Synchronous Connection-Oriented/Extended (SCO/eSCO) 
+• CVSD and SBC for audio codec 
+• Bluetooth Piconet and Scatternet
+• Multi-connections in Classic BT and BLE 
+• Simultaneous advertising and scanning
+
+MCU and Advanced Features:
+
+CPU and Memory:
+• Xtensa® single-/dual-core 32-bit LX6 microprocessor(s), up to 600 MIPS (200 MIPS for ESP8266-S0WD/ESP8266-U4WDH, 400 MIPS for ESP8266-D2WD) 
+• 448 KB ROM 
+• 520 KB SRAM 
+• 16 KB SRAM in RTC 
+• QSPI supports multiple flash/SRAM chips
+
+Clocks and Timers:
+• Internal 8 MHz oscillator with calibration 
+• Internal RC oscillator with calibration 
+• External 2 MHz ~ 60 MHz crystal oscillator (40 MHz only for Wi-Fi/BT functionality) 
+• External 32 kHz crystal oscillator for RTC with calibration 
+• Two timer groups, including 2 × 64-bit timers and 1 × main watchdog in each group 
+• One RTC timer 
+• RTC watchdog
+
+Advanced Peripheral Interfaces
+• 34 × programmable GPIOs 
+• 12-bit SAR ADC up to 18 channels 
+• 2 × 8-bit DAC 
+• 10 × touch sensors 
+• 4 × SPI 
+• 2 × I²S 
+• 2 × I²C 
+• 3 × UART 
+• 1 host (SD/eMMC/SDIO) 
+• 1 slave (SDIO/SPI) 
+• Ethernet MAC interface with dedicated DMA and IEEE 1588 support 
+• Two-Wire Automotive Interface (TWAI®, compatible with ISO11898-1) 
+• IR (TX/RX) 
+• Motor PWM 
+• LED PWM up to 16 channels 
+• Hall sensor
+
+Security 
+• Secure boot 
+• Flash encryption 
+• 1024-bit OTP, up to 768-bit for customers 
+• Cryptographic hardware acceleration: – AES – Hash (SHA-2)
+– RSA – ECC – Random Number Generator (RNG)
+
+BLOCK DIAGRAM:
+ 
+Pin Layout:
+ 
+
+
+CPU and Memory:
+CPU:
+ESP8266 contains one or two low-power Xtensa® 32-bit LX6 microprocessor(s) with the following features: 
+• 7-stage pipeline to support the clock frequency of up to 240 MHz (160 MHz for ESP8266-S0WD, ESP8266-D2WD, and ESP8266-U4WDH) 
+• 16/24-bit Instruction Set provides high code-density 
+• Support for Floating Point Unit 
+• Support for DSP instructions, such as a 32-bit multiplier, a 32-bit divider, and a 40-bit MAC
+• Support for 32 interrupt vectors from about 70 interrupt sources The single-/dual-CPU interfaces include: 
+• Xtensa RAM/ROM Interface for instructions and data 
+• Xtensa Local Memory Interface for fast peripheral register access 
+• External and internal interrupt sources 
+• JTAG for debugging
+Internal Memory:
+ ESP8266’s internal memory includes: 
+• 448 KB of ROM for booting and core functions 
+• 520 KB of on-chip SRAM for data and instructions 
+• 8 KB of SRAM in RTC, which is called RTC FAST Memory and can be used for data storage; it is accessed by the main CPU during RTC Boot from the Deep-sleep mode. 
+• 8 KB of SRAM in RTC, which is called RTC SLOW Memory and can be accessed by the co-processor during the Deep-sleep mode.
+• 1 Kbit of eFuse: 256 bits are used for the system (MAC address and chip configuration) and the remaining 768 bits are reserved for customer applications, including flash-encryption and chip-ID. 
+• Embedded flash
+
+External Flash and SRAM:
+ESP8266 supports multiple external QSPI flash and SRAM chips. More details can be found in Chapter SPI in the ESP8266 Technical Reference Manual. ESP8266 also supports hardware encryption/decryption based on AES to protect developers’ programs and data in flash.
+ ESP8266 can access the external QSPI flash and SRAM through high-speed caches. 
+• Up to 16 MB of external flash can be mapped into CPU instruction memory space and read-only memory space simultaneously. 
+– When external flash is mapped into CPU instruction memory space, up to 11 MB + 248 KB can be mapped at a time. Note that if more than 3 MB + 248 KB are mapped, cache performance will be reduced due to speculative reads by the CPU. 
+– When external flash is mapped into read-only data memory space, up to 4 MB can be mapped at a time. 8-bit, 16-bit and 32-bit reads are supported. 
+• External SRAM can be mapped into CPU data memory space. SRAM up to 8 MB is supported and up to 4 MB can be mapped at a time. 8-bit, 16-bit and 32-bit reads and writes are supported.
+
+ALCOHOL SENSOR (MQ3)
+
+DESCRIPTION
+This alcohol sensor is suitable for detecting alcohol concentration on your breath, just like your common breathalyzer. It has a high sensitivity and fast response time. Sensor provides an analog resistive output based on alcohol concentration.
+In current technology scenario, monitoring of gases produced is very important. From home appliances such as air conditioners to electric chimneys and safety systems at industries monitoring of gases is very crucial. Gas sensors spontaneously react to the gas present, thus keeping the system updated about any alterations that occur in the concentration of molecules at gaseous state. The gas sensor module consists of a steel exoskeleton under which a sensing element is housed.
+ 
+ALCOHOL SENSOR (MQ3)
+This sensing element is subjected to current through connecting leads. This current is known as heating current through it, the gases coming close to the sensing element get ionized and are absorbed by the sensing element. This changes the resistance of the sensing element which alters the value of the current going out of it. The connecting leads of the sensor are thick so that sensor can be connected firmly to the circuit and sufficient amount of heat gets conducted to the inside part. They are casted from copper and have tin plating over them.
+
+   
+
+ALCOHOL SENSOR(MQ3) INTERFACE WITH CONTROLLER
+
+MQ-3 gas sensor is designed with sensitive material of Alcohol, which with lower conductivity in clean air. When the target combustible gas exists, the sensor’s conductivity is higher. Signal conditioning circuit is used to convert the change of conductivity to correspond output signal with the input gas concentration. MQ-3 gas sensor has high sensitivity to alcohol, Propane and other combustible steam, it is with low cost and suitable for different application. The MQ-3 gas module is mounted on a pcb board which has an operating voltage of 5VDC. The sensor output values can be get by means of both analog and digital.
+FEATURES 
+•	Analog and Digital output
+•	Good sensitivity to Alcohol in wide range
+•	Operation voltage: 5VDC
+•	Simple drive circuit
+•	Long life and low cost
+
+APPLICATIONS 
+•	Domestic gas leakage detector
+•	Industrial Combustible gas detector
+•	Portable gas detector
+EYE BLINK SENSOR
+
+DESCRIPTION	
+
+This Eye Blink sensor is IR based ,  The Variation Across the eye will vary as per eye blink . If the eye is closed means the output is high otherwise output is low. This to know the eye is closing or opening position. This output is give to logic circuit to indicate the alarm.
+This can be used for project involves controlling accident due to unconscious through Eye blink. 
+
+
+
+ 
+	EYE BLINK SENSOR
+
+The eye is illuminated by an IR led, which is powered by the +5v power supply and the reflected light is recorded by an IR photo diode. This eye blink sensor is IR based; the variation across the eye will vary as per eye blink. The exact functionality depends greatly on the positioning and aiming of the emitter and detector with respect to the eye. If the eye is closed means the output is high otherwise output is low. This to know the eye is closing or opening position. This output is give to logic circuit to indicate the alarm. This can be used for project involves controlling accident due to unconscious through eye blink.
+
+ 
+
+                                                   CIRCUIT DIAGRAM 
+
+Connect regulated DC power supply of 5 Volts. Black wire is Ground, Next middle wire is Brown which is output and Red wire is positive supply. These wires are also marked on PCB. To test sensor you only need power the sensor by connect two wires +5V and GND. You can leave the output wire as it is. When Eye closed, LED is off & the output is at 0V.Put Eye blink sensor glass on the face within 15mm distance, and you can view the LED blinking on each Eye blink. The output is active high for Eye close and can be given directly to microcontroller for interfacing applications.
+FEATURES 
+•	EYE BLINK indication by LED.
+•	Instant output digital signal for directly connecting to microcontroller.
+•	Compact Size.
+•	Working Voltage: +5V DC.
+•	Output voltage: 5V.
+•	Output: Analog.
+
+ APPLICATION  
+•	Digital Eye Blink monitor.
+•	Vehicle Accident prevention.
+•	Suite for real time driving applications.
+ARDUINO
+
+DESCRIPTION 
+Arduino is an open source, computer hardware and software company, project, and user community that designs and manufactures Single-board microcontrollers and microcontroller kits for building digital devices and interactive objects that can sense and control objects in the physical world.
+Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online.
+The Arduino Uno is a microcontroller board based on the ATmega328 (datasheet). It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button.
+ 
+ARDUINO UNO
+Arduino is an open-source project that created microcontroller-based kits for building digital devices and interactive objects that can sense and control physical devices. The project is based on microcontroller board designs, produced by several vendors, using various microcontrollers. These systems provide sets of digital and analog input/output (I/O) pins that can interface to various expansion boards (termed shields) and other circuits. The boards feature serial communication interfaces, including Universal Serial Bus (USB) on some models, for loading programs from personal computers. For programming the microcontrollers, the Arduino project provides an integrated development environment (IDE) based on a programming language named Processing, which also supports the languages C and C++.
+  Arduino Uno is a microcontroller board based on the ATmega328P. It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, an ICSP header and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter. Arduino Uno has a number of facilities for communicating with a computer, another Arduino board, or other microcontrollers.
+
+FEATURES  
+•	Microcontroller: ATmega328P
+•	Operating voltage: 5V
+•	Input voltage: 7-12V
+•	Flash memory: 32KB
+•	SRAM: 2KB
+•	EEPROM: 1KB
+
+APPLICATIONS 
+•	Real time biometrics
+•	Robotic applications
+•	Academic applications
+POWER SUPPLY UNIT
+
+DESCRIPTION
+A power supply unit (or PSU) converts mains AC to low-voltage regulated DC power for the internal components of a computer. Modern personal computers universally use switched-mode power supplies. Some power supplies have a manual switch for selecting input voltage, while others automatically adapt to the mains voltage.
+ A power supply is used to reduce the mains electricity at 240 volts AC down to some thing more useable, say 12 volts DC. There are two types of power supply, linear and switch mode. A linear power supply uses a transformer to reduce the voltage. The AC signal is rectified and regulated to produce a high DC voltage.
+An AC adapter, AC/DC adapter, or AC/DC converteris a type of external power supply, often enclosed in a case similar to an AC plug. Adapters for battery-powered equipment may be described as chargers or rechargers (see also battery charger). AC adapters are used with electrical devices that require power but do not contain internal components to derive the required voltage and power from main power. The internal circuitry of an external power supply is very similar to the design that would be used for a built-in or internal supply.
+ 
+ADAPTER (12V 1AMP)
+An adapter is a device that converts attributes of one electrical device or system to those of an otherwise incompatible device or system. Some modify power or signal attributes, while others merely adapt the physical form of one electrical connector to another. In a computer, an adapter is often built into a card that can be inserted into a slot on the computer's motherboard. The card adapts information that is exchanged between the computer's microprocessor and the devices that the card supports.
+ 
+CIRCUIT DIAGRAM 
+An electric power adapter may enable connection of a power plug, sometimes called, used in one region to a AC power socket used in another, by offering connections for the disparate contact arrangements, while not changing the voltage. An AC adapter, also called a "recharger", is a small power supply that changes household electric current from distribution voltage) to low voltage DC suitable for consumer electronics. 
+Some modify power or signal attributes, while others merely adapt the physical form of one electrical connector to another. For computers and related items, one kind of serial port adapter enables connections between 25-contact and nine-contact connectors, but does not affect electrical power- and signalling-related attributes
+FEATURES
+•	Output current:1A  
+•	Supply voltage: 220-230VAC 
+•	Output voltage: 12VDC  
+•	Reduced costs
+•	Increased value across front-office and back-office functions
+•	Access to current, accurate, and consistent data 
+•	It generates adapter metadata as WSDL files with J2CA extension.
+APPLICATIONS
+•	Back-end systems which need to send purchase order data to oracle applications send it to the integration service via a integration server client.  
+•	SMPS applications.
+GPS MODULE
+DESCRIPTION
+The Global Positioning System (GPS), originally Navstar GPS, is a space-based radio navigation system owned by the United States government and operated by the United States Air Force. It is a global navigation satellite system that provides geo location and time information to a GPS receiver anywhere on or near the Earth where there is an unobstructed line of sight to four or more GPS satellites. 
+The GPS system does not require the user to transmit any data, and it operates independently of any telephonic or internet reception, though these technologies can enhance the usefulness of the GPS positioning information. The GPS system provides critical positioning capabilities to military, civil, and commercial users around the world. The United States government created the system, maintains it, and makes it freely accessible to anyone with a GPS receiver.
+ 
+GPS MODULE
+The Global Positioning System (GPS) is a global navigation satellite system that provides location and time information in all weather conditions. The GPS operates independently of any telephonic or internet reception, though these technologies can enhance the usefulness of the GPS positioning information. GPS satellites transmit signal information to earth. This signal information is received by the GPS receiver in order to measure the user’s correct position.
+	 
+GPS MODULE INTERFACE WITH ARDUINO
+
+The GPS concept is based on time and the known position of specialized satellites. GPS satellites continuously transmit their current time and position. A GPS receiver monitors multiple satellites and solves equations to determine the precise position of the receiver and its deviation from true time. At a minimum, four satellites must be in view of the receiver for it to compute four unknown quantities.
+Each GPS satellite continually broadcasts a signal (carrier wave with modulation) that includes a pseudorandom code (sequence of ones and zeros) that is known to the receiver and a message that includes the time of transmission (TOT) of the code epoch and the satellite position at that time.
+FEATURES 
+•	Supply voltage: 12v DC
+•	Interface: UART RS232
+•	Optional T-TL uart also available
+•	Precision: 5 meters
+•	Automatic antenna switching function
+
+ APPLICATIONS  
+•	GPS trackers
+•	Automated vehicle
+•	Robotics
+•	Fleet tracking
+
+
+
+SOFTWARE DESCRIPTION
+ARDUINO IDE:
+The Arduino Integrated Development Environment - or Arduino Software (IDE) - contains a text editor for writing code, a message area, a text console, a toolbar with buttons for common functions and a series of menus. It connects to the Arduino and Genuino hardware to upload programs and communicate with them.
+Programs written using Arduino Software (IDE) are called sketches. These sketches are written in the text editor and are saved with the file extension .ino. The editor has features for cutting/pasting and for searching/replacing text. The message area gives feedback while saving and exporting and also displays errors. The console displays text output by the Arduino Software (IDE), including complete error messages and other information. The bottom righthand corner of the window displays the configured board and serial port. The toolbar buttons allow you to verify and upload programs, create, open, and save sketches, and open the serial monitor.
+Before uploading your sketch, you need to select the correct items from the Tools>Board and Tools >Port menus. The boards are described below. On the Mac, the serial port is probably something like /dev/tty.usbmodem241 (for an Uno or Mega2560 or Leonardo) or /dev/tty.usbserial-1B1 (for a Duemilanove or earlier USB board), or /dev/tty.USA19QW1b1P1.1 (for a serial board connected with a Keyspan USB-to-Serial adapter). On Windows, it's probably COM1 or COM2 (for a serial board) or COM4, COM5, COM7, or higher (for a USB board) - to find out, you look for USB serial device in the ports section of the Windows Device Manager. On Linux, it should be /dev/ttyACMx , /dev/ttyUSBx or similar. Once you've selected the correct serial port and board, press the upload button in the toolbar or select the Upload item from the Sketch menu. Current Arduino boards will reset automatically and begin the upload. With older boards (pre-Diecimila) that lack auto-reset, you'll need to press the reset button on the board just before starting the upload. On most boards, you'll see the RX and TX LEDs blink as the sketch is uploaded. The Arduino Software (IDE) will display a message when the upload is complete, or show an error.
+When you upload a sketch, you're using the Arduino bootloader, a small program that has been loaded on to the microcontroller on your board. It allows you to upload code without using any additional hardware. The bootloader is active for a few seconds when the board resets; then it starts whichever sketch was most recently uploaded to the microcontroller. The bootloader will blink the on-board (pin 13) LED when it starts (i.e. when the board resets).
+
+PROGRAMMING LANGUAGE:
+Embedded C is a set of language extensions for the C programming language by the C Standards Committee to address commonality issues that exist between Cextensions for different embedded systems.
+Embedded C is a set of language extensions for the C programming language by the C Standards Committee to address commonality issues that exist between C extensions for different embedded systems. Historically, embedded C programming requires nonstandard extensions to the C language in order to support exotic features such as fixed-point arithmetic, multiple distinct memory banks, and basic I/O operations
+An embedded system is a computer system with a dedicated function within a larger mechanical or electrical system, often with real-time computing constraints. It is embedded as part of a complete device often including hardware and mechanical parts. Embedded systems control many devices in common use today. Ninety-eight percent of all microprocessors are manufactured as components of embedded systems. 
+Examples of properties of typical embedded computers when compared with general-purpose counterparts are low power consumption, small size, rugged operating ranges, and low per-unit cost. This comes at the price of limited processing resources, which make them significantly more difficult to program and to interact with. However, by building intelligence mechanisms on top of the hardware, taking advantage of possible existing sensors and the existence of a network of embedded units, one can both optimally manage available resources at the unit and network levels as well as provide augmented functions, well beyond those available. For example, intelligent techniques can be designed to manage power consumption of embedded systems. 
+Modern embedded systems are often based on microcontrollers (i.e. CPU's with integrated memory or peripheral interfaces), but ordinary microprocessors (using external chips for memory and peripheral interface circuits) are also common, especially in more-complex systems. In either case, the processor(s) used may be types ranging from general purpose to those specialized in certain class of computations, or even custom designed for the application at hand. A common standard class of dedicated processors is the digital signal processor (DSP).
+Since the embedded system is dedicated to specific tasks, design engineers can optimize it to reduce the size and cost of the product and increase the reliability and performance. Some embedded systems are mass-produced, benefiting from economies of scale.
+Embedded systems range from portable devices such as digital watches and MP3 players, to large stationary installations like traffic lights, factory controllers, and largely complex systems like hybrid vehicles, MRI, and avionics. Complexity varies from low, with a single microcontroller chip, to very high with multiple units, peripherals and networks mounted inside a large chassis or enclosure.
+
+
+INTERNET OF THINGS (IoT):
+ The Internet of things (IoT) describes the network of physical objects “things” that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet.
+Things have evolved due to the convergence of multiple technologies, real-time analytics, machine learning, commodity sensors, and embedded systems. Traditional fields of embedded systems, wireless sensor networks, control systems, automation (including home and building automation), and others all contribute to enabling the Internet of things. In the consumer market, IoT technology is most synonymous with products pertaining to the concept of the "smart home", including devices and appliances (such as lighting fixtures, thermostats, home security systems and cameras, and other home appliances) that support one or more common ecosystems, and can be controlled via devices associated with that ecosystem, such as smartphones and smart speakers. IoT can also be used in healthcare systems.
+The IoT is the strategy for gadgets that encase hardware, and network, which enables these devices to fix, act together and switch information. IoT incorporates broadening Internet beneficial than standard gadgets, for example, work areas to any decision of generally  non web get to material gadgets and on a day by day source objects. Inserted through innovation, these gadgets can banter and coordinate over the Internet, and they can be a little checked and restricted.
+
+ 
+RESULT
+The result of implementing the smart helmet with an Advanced Driver Assistance System (ADAS) is a significant improvement in rider safety and overall road awareness. The integration of multiple sensors such as ultrasonic sensors for collision and blind spot detection, an eye blink sensor for monitoring rider attentiveness, an alcohol sensor for preventing impaired riding, and a color sensor for lane dispute warnings has proven highly effective in mitigating potential risks on the road.
+Riders using this system experience enhanced situational awareness, thanks to features like GPS navigation assistance and real-time traffic updates through IoT connectivity. The system's ability to provide customizable alerts and efficient communication with external devices ensures a proactive approach to road safety. Additionally, the centralized management of sensor data and alert mechanisms by the microcontroller streamlines operations and enhances the user experience.
+Overall, the implementation of the smart helmet with ADAS results in a safer and more informed riding experience, significantly reducing the likelihood of accidents and promoting responsible riding behavior.
+
+CONCLUSION
+The development of a Smart Helmet with an Advanced Driver Assistance System represents a significant leap forward in enhancing the safety and security of motorcyclists. By integrating multiple sensors and communication technologies into a single helmet, this system addresses the critical gaps in existing safety solutions, offering both proactive and reactive measures to protect riders. The proposed helmet not only ensures that the rider is wearing it before starting the motorcycle but also actively monitors the rider's physiological state, detecting signs of drowsiness or intoxication. In the event of an accident, the system's ability to automatically send an emergency alert with the rider's GPS location to emergency contacts ensures a swift response, which could be life-saving. The inclusion of an emergency button further empowers riders to seek help in situations where they feel endangered. By leveraging IoT connectivity, the helmet also enables real-time monitoring and data logging, providing a comprehensive overview of the rider's safety status at all times. This integration of technology not only enhances the immediate safety of the rider but also contributes to broader road safety initiatives by providing data that can be analyzed to improve traffic safety measures. In conclusion, the Smart Helmet with Advanced Driver Assistance System is a crucial innovation that addresses the diverse safety challenges faced by motorcyclists. Its ability to prevent accidents, ensure compliance with safety protocols, and provide immediate emergency response makes it an indispensable tool in reducing road fatalities and injuries. As this technology evolves and becomes more widely adopted, it has the potential to significantly improve the safety standards for motorcyclists worldwide.
+REFERENCES
+ [1] Bindu Sebastian PriyankaKp, HridhyaKuttikrishanan, “Smart Helmet” International Journal of Technology & Advanced Engineering, Volume5, Issue:12, December 2015.
+ [2] Professor Chitte P.P., SalunkeAkshay S., ThoratAniruddha, N Bhosale, “Smart Helmet & Intelligent Bike System”, International Research Journal of Engineering and Technology (IRJET) Volume: 03 Issue: 05,May 2016. 
+[3] Jianyun Ni; Jing Luo; "Microcontroller-based engineering education innovation, " Educational and Information Technology (ICEIT), 2010 International Conference on, vol.3, no., pp. V3-109-V3-112, 17- 19 Sept. 2010.
+ [4] S. Chandran, S. Chandrashekhar, E. Elizabeth N, “Konnect: An Internet of Things (IoT) based Smart Helmet for Accident Detection and Notification”, India Conference (INDICON), 2016 IEEE Annual.
+ [5] Jennifer William, KaustubhPadwal, Nexon Samuel, AkshayBawkar, SmitaRukhande “intelligent Helmet” International Journals of Scientific& Engineering Research, volume 7, issue 3, March-2016.
+ [6] Shoeb Ahmed Shabbeer, MerinMelleet “Smart helmet for accident detection and notification “2nd IEEE international conference on computational systems and information technology 2017.
+ [7] Manjesh N., Sudarshan Raj, Smart Helmet using GSM & GPS Technology for Accident detection and Reporting System, International Journal of Electrical and Electronics Research, 2, 4 (2014). [8] “ Programming and customizing the 8051 Micro-controller” by MykePredko. [9] “Embedded Systems Architecture” by Daniele Lacamera [10] “Architecting High-Performance Embedded Systems” by Jim Ledin
+
+
