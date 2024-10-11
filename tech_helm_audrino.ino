@@ -4,6 +4,13 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <WiFiClient.h>
+#include <WiFiUdp.h>
+#include <EEPROM.h>
+#include <EEPROMVar.h>
+#include <EEPROMType.h>
+#include <EEPROMConfig.h>
+#include <EEPROMUtil.h>
+#include <EEPROMClass.h>
 const char* ssid = "iot";
 const char* password = "12345678";
 const char* serverName = "http://iotcloud22.in/vellore_smart_helmet2/post_value.php";
